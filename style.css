@@ -1,66 +1,64 @@
 body, html {
     padding: 0;
     margin: 0;
-    /* height: 200
-    0px; */
 }
 
 body {
-    /* background-image: url(image/matematika-bg.jpg); */
     background-size: cover;
 }
 
-
 .container {
     margin: auto;
+    display: flex;
 }
 
-.topbar {
+.container .topbar {
     background-color: lightblue;
     position: fixed;
     height: 70px;
     right: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
-.topbar span {
+.container .topbar span {
     color: white;
     font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main {
+.container .main {
     margin: auto;
     max-width: 500px;
+    /* height: 600px; */
     box-sizing: border-box;
     padding: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.main div {
-    margin-top: 40px;
+.container .main .quote {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    height: 200px;
+    display: flex;
 }
 
-.main .quote span {
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+.container .main .quote span {
+    text-align: center;
 }
 
-.main .menu {
+.container .main .menu {
     display: flex;
     flex-direction: column;
 }
 
-.main .menu .button {
+.container .main .menu .button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
     font-size: 1.2rem;
@@ -73,15 +71,11 @@ body {
     background-color: cornflowerblue;
 }
 
-.main .menu .button span a {
+.container .main .menu .button span a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.main .menu .button span a:hover {
+.container .main .menu .button span a:hover {
     font-size: 1.25rem;
-}
-
-footer {
-    background-color: rgb(14, 208, 14);
 }
