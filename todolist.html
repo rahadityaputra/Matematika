@@ -5,39 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-             background-color: #ddd;
-        }
-
-        /* css untuk wadah atau boxnya */
-        .container {
-            max-width: 500px;
-            margin: 10px auto;
-            padding:10px 50px  ;
-            box-sizing: border-box;
-            font-family:  Arial, sans-serif;
-        }
-
-        .container h1 {
-            text-align: center;
-            color: green;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="todolist.css">
 </head>
 
 <body>
     <div class="container">
         <h2>Daftar List Saya</h2>
-        <input type="text" id="input" required placeholder="Belajar Javascript">
+        <input type="text" id="input" required placeholder="Lakukan !">
         <button id="tambah">Tambah List</button>
-        <ul></ul>
+        <ul class="daftar-list"></ul>
     </div>
     <script src="todolist.js"></script>
 </body>
