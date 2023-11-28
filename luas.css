@@ -1,3 +1,28 @@
 body {
+    font-family: cursive;
     background-color: rgb(215, 186, 186);
+}
+
+.container {
+    margin: 50px auto;
+    background-color: burlywood;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+}
+
+.container .pilih-bangun div{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    background-color: chartreuse;
+}
+
+.container .pilih-bangun div span {
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
 }
