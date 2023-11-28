@@ -9,14 +9,20 @@ body {
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
 }
 
 .container .pilih-bangun div{
     display: flex;
-    margin: 20px;
+}
+
+.container .menu {
     padding: 10px;
     background-color: chartreuse;
+    margin: 20px;
+}
+
+.container .keluar {
+    background-color: red;
 }
 
 .container .pilih-bangun div span {
@@ -25,4 +31,9 @@ body {
 
 .container h1 {
     text-align: center;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
 }
