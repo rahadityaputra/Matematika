@@ -1,19 +1,21 @@
+/* || style umum */
 body, html {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-size: cover;
+    background-color: rgb(255, 255, 255);
 }
 
 .container {
-    margin: auto;
     display: flex;
 }
 
-.container .topbar {
-    background-color: lightblue;
+/* || style lain */
+
+.topbar {
+    background-color: rgb(230, 192, 0);
     position: fixed;
     height: 70px;
     right: 0;
@@ -24,14 +26,14 @@ body {
     padding: 0 20px;
 }
 
-.container .topbar span {
+.topbar span {
     color: white;
     font-size: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container .main {
-    margin: auto;
+.main {
+    margin: 10px auto;
     max-width: 500px;
     /* height: 600px; */
     box-sizing: border-box;
@@ -42,23 +44,33 @@ body {
     align-items: center;
 }
 
-.container .main .quote {
+.main .waktu ,.main .ucapan  {
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quote {
     font-family:'Courier New', Courier, monospace;
     font-size: 1.3rem;
+    width: 300px;
     height: 200px;
     display: flex;
 }
 
-.container .main .quote span {
+.quote span {
     text-align: center;
+    margin: auto;
 }
 
-.container .main .menu {
+.main .menu {
     display: flex;
     flex-direction: column;
 }
 
-.container .main .menu .button {
+.main .menu .button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
     font-size: 1.2rem;
@@ -71,11 +83,11 @@ body {
     background-color: cornflowerblue;
 }
 
-.container .main .menu .button span a {
+.menu .button a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.container .main .menu .button span a:hover {
+.menu .button a:hover {
     font-size: 1.25rem;
 }
