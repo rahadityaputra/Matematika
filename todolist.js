@@ -29,7 +29,7 @@ function tambahList() {
 
  // funtion untuk menandai list sudah selesai
  function selesaiList(list) {
-    list.style.textDecoration = 'line-through';
+    list.firstChild.style.textDecoration = 'line-through';
  }
 
  // function untuk hapus list 

@@ -43,7 +43,6 @@ body {
 
 .topbar span {
     color: white;
-    /* font-size: 1.2rem; */
     font-family: "Pixelmania";
 }
 
@@ -94,8 +93,6 @@ body {
     width: 200px;
     height: 50px;
     cursor: pointer;
-    /* border-radius: 10px; */
-    /* background-color: cornflowerblue; */
 }
 
 .main .menu .button:hover {
@@ -104,8 +101,4 @@ body {
 .menu .button a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-.menu .button a:hover {
-    font-size: 1.25rem;
 }

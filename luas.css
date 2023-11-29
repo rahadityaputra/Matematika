@@ -1,17 +1,25 @@
+body {
+    background: #000;
+}
+
 .container {
-    background-color: burlywood;
+    margin: 30px auto;
     max-width: 400px;
     flex-direction: column;
 }
 
-.container .pilih-bangun div{
+.container .pilih div{
     display: flex;
 }
 
 .menu {
     padding: 10px;
-    background-color: chartreuse;
+    border:3px gold solid;
     margin: 20px;
+}
+
+.menu:hover {
+    background: gold;
 }
 
 .keluar {
@@ -23,6 +31,7 @@
 }
 
 h1 {
+    color: white;
     text-align: center;
 }
 
