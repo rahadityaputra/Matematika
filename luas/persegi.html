@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luas Persegi</title>
 </head>
 <body>
-    
+    <input type="number" name="" id="input-sisi" placeholder="panjang sisi">
+    <input type="button" value="luas" >
+    <div class="hasil">
+        <span></span>
+    </div>
+    <script>
+        const input= document.getElementById('input-sisi');
+        const button = document.querySelector('input[type="button"]');
+        const hasil = document.querySelector('.hasil span');
+
+        function getSisi() {
+            return Number(input.value);
+        }
+
+        function getLuas() {
+            if (getSisi() == 0) {
+                hasil.innerHTML = `Anda salah memasukkan angka`;    
+            } else {
+                let luas = getSisi() * getSisi();
+                hasil.innerHTML = `${luas} cm2`;    
+            }
+        }
+
+        button.addEventListener('click', getLuas);
+    </script>
 </body>
 </html>

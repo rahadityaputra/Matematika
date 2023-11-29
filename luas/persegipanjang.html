@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luas Persegi Panjang</title>
 </head>
 <body>
-    
+    <input type="number" name="" id="input-panjang" placeholder="panjang">
+    <input type="number" name="" id="input-lebar" placeholder="lebar">
+    <input type="button" value="luas" >
+    <div class="hasil">
+        <span></span>
+    </div>
+    <script>
+        const inputPanjang= document.getElementById('input-panjang');
+        const inputLebar= document.getElementById('input-lebar');
+        const button = document.querySelector('input[type="button"]');
+        const hasil = document.querySelector('.hasil span');
+
+        function getPanjang() {
+            return Number(inputPanjang.value);
+        }
+        
+        function getLebar() {
+            return Number(inputLebar.value);
+        }
+
+        function getLuas() {
+            let luas = getPanjang() * getLebar();
+            hasil.innerHTML = `${luas} cm2`;    
+        }
+
+        button.addEventListener('click', getLuas);
+    </script>
 </body>
 </html>
