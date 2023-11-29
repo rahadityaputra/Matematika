@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luas Persegi Panjang</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 300px;
+            margin: 50px auto;    
+            align-items: center;
+        }
+
+        input {
+            background: black;
+            color: white;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            border: 3px white solid;
+
+        }
+
+        .hasil {
+            display: flex;
+            margin: 50px;
+            width: 200px;
+            height: 50px;
+            border: 3px white solid;
+        }
+
+        .hasil span {
+            margin: auto;   
+        }
+    </style>
 </head>
 <body>
-    <input type="number" name="" id="input-panjang" placeholder="panjang">
-    <input type="number" name="" id="input-lebar" placeholder="lebar">
-    <input type="button" value="luas" >
-    <div class="hasil">
-        <span></span>
+    <div class="container">
+        <input type="number" name="" id="input-panjang" placeholder="panjang">
+        <input type="number" name="" id="input-lebar" placeholder="lebar">
+        <div class="hasil">
+            <span></span>
+        </div>
     </div>
     <script>
         const inputPanjang= document.getElementById('input-panjang');
         const inputLebar= document.getElementById('input-lebar');
-        const button = document.querySelector('input[type="button"]');
         const hasil = document.querySelector('.hasil span');
 
         function getPanjang() {
@@ -31,7 +67,8 @@
             hasil.innerHTML = `${luas} cm2`;    
         }
 
-        button.addEventListener('click', getLuas);
+        inputPanjang.addEventListener('input', getLuas);
+        inputLebar.addEventListener('input', getLuas);
     </script>
 </body>
 </html>
