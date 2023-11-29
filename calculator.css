@@ -1,94 +1,83 @@
-/* style untuk html dan boddy supaya margin dan padding 0 */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 /* style untuk mengatur tapilan halaman */
 .container {
     width: max-content;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 /* style untuk mengatur tampilan kalkulator */
-.container .main-calculator {
+.main-calculator {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     max-width: 300px;
     margin: 70px auto;
-    background-color: rgb(0, 255, 30);
+    background-color: #39ff14;
 }
 
-.container .main-calculator div {
+.main-calculator div {
     margin: 20px;
 }
 
 /* style untuk mangatur tampilan screen layar kalkulator */
-.container .main-calculator .screen {
+.screen {
     padding: 10px;
     height: 100px;
     background-color: black;
     overflow: auto;
+    text-align: right;
+    display: flex;
 }
 
 /* style untuk mangatur tampilan tombol kalkulator */
-.container .main-calculator .button {
+.button {
     font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
     background-color: rgb(0, 0, 0);
+    color: black;
 }
 
 /* style untuk mangatur setiap tombol */
-.container .main-calculator .button div {
+.button div {
     cursor: pointer;
     box-sizing: border-box;
     margin: 2px;
     width: 60px;
     height: 60px;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255)    ;
     display: flex;
 }
 
 /* style untuk tulisan di dalam tombol */
-.container .main-calculator .button div span {
+.button div span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: auto;
 }
 
-.container .main-calculator .screen {
-    text-align: right;
-    display: flex;
-}
-
 /* style untuk tulisan di layar kallkulator */
-.container .main-calculator .screen span.number {
+.screen .number {
     margin: auto  ;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.5rem;
+    font-family: "Kemco";
+    font-size: 2rem;
 }
 
 /* style untuk tombol kembali */
-.container .button-kembali {
-    background-color: rgb(255, 0, 0);
+.button-kembali {
+    background-color:rgb(119, 0, 119);
     width: 200px;
     height: 50px;
     display: flex;
 }
 
 /* style untuk tulisan di dalam tomnol kembali */
-.container .button-kembali span  {
+.button-kembali span  {
     margin: auto;
 }
 
 /* style untuk menghilangkan garis link */
-.container .button-kembali span a {
-    color: white;
+.button-kembali a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }

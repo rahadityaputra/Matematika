@@ -1,31 +1,58 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9rem;
 }
-
-.container {
-    max-width: 500px;
-    margin: 10px auto;
-    padding:10px 50px  ;
-    box-sizing: border-box;
-    font-family:  Arial, sans-serif;
-    color: lightgreen;
-}
-
 .container h2 {
+    font-family: "Pixelmania";
     text-align: center;
-    color: rgb(255, 8, 8);
-    
 }
 
-.container .button {
-    background-color: greenyellow;
+#input {
+    border: 2px #df00fe solid;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.container ul li button:nth-child(1) {
-    margin-left: 40px;
+.input {
+    text-align: center;
 }
+
+#tambah {
+    background-color: #df00fe;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li .kotak {
+    display: inline-block;
+    border: 2px #df00fe solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+li button {
+    background-color: #df00fe;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li button:nth-child(2) {
+    margin-left: 30px;
+}
+

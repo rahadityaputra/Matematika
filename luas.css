@@ -1,13 +1,6 @@
-body {
-    font-family: cursive;
-    background-color: rgb(215, 186, 186);
-}
-
 .container {
-    margin: 50px auto;
     background-color: burlywood;
     max-width: 400px;
-    display: flex;
     flex-direction: column;
 }
 
@@ -15,25 +8,25 @@ body {
     display: flex;
 }
 
-.container .menu {
+.menu {
     padding: 10px;
     background-color: chartreuse;
     margin: 20px;
 }
 
-.container .keluar {
+.keluar {
     background-color: red;
 }
 
-.container .pilih-bangun div span {
+.pilih div span {
     margin: auto;
 }
 
-.container h1 {
+h1 {
     text-align: center;
 }
 
-.container a {
+a {
     color: white;
     text-decoration: none;
 }

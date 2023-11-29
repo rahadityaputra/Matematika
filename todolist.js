@@ -20,7 +20,7 @@ const list = document.getElementsByTagName('li');
 function tambahList() {
          if (input.value != '' && cekList() ) {
              const list_baru = document.createElement('li');
-             list_baru.textContent = input.value;
+             list_baru.innerHTML = `<span class="kotak">${input.value}</span>`;
              daftar_list.appendChild(list_baru);
              buatTombol(list_baru);
             } 

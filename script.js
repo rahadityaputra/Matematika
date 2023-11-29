@@ -2,6 +2,9 @@ const waktu = document.querySelector('.container .main .waktu span');
 const quote = document.querySelector('.container .main .quote span');
 const kataUcapan = document.querySelector('.container .main .ucapan span');
 
+// untuk mengambil waktu dari sistem komputer kita
+
+// ini menggun
 let day = (new Date().getDay() == 1)? 'Senin' 
             : (new Date().getDay() == 2)? 'Selasa' 
             : (new Date().getDay() == 3)? 'Rabu' 
