@@ -41,7 +41,7 @@ function hasil(){
         angka_layar.innerHTML = kurang(angka1, angka2);
     } else if (operator == 'x') {
         angka_layar.innerHTML = kali(angka1, angka2);
-    } else if (operator == '/') {
+    } else if (operator == ':') {
         angka_layar.innerHTML = bagi(angka1, angka2);
     }
 }
