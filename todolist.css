@@ -2,11 +2,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: .9rem;
     font-weight: bold;
+    background: #000;
+    color: white;
 }
-.container {
+.container.todo {
+    margin: 20px auto;
+    max-width: 500px;
+    border: 3px gold solid;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 .container h2 {
     font-family: "Pixelmania";
@@ -15,7 +20,7 @@ body {
 
 #input {
     border: 2px #df00fe solid;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: black;
     color: white;
     text-decoration: none;
@@ -23,6 +28,9 @@ body {
     height: 50px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-bottom: 2px #df00fe solid;
+    outline: 0;
 }
 
 .input {
@@ -30,6 +38,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 #tambah {
@@ -38,6 +47,8 @@ body {
     height: 30px;
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border: none;
 }
 
 ul li .kotak {
@@ -103,8 +114,5 @@ li button:nth-child(2) {
     li button:nth-child(2) {
         margin-left: 0px;
     }
-
-
-    
 }
 
