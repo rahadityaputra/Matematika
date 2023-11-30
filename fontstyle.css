@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Pixelmania';
+    src: url('font/pixelmania-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Kemco';
+    src: url('font/kemco_pixel_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gamer';
+    src: url('font/gamer-webfont.woff') format('woff');
+}
