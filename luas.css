@@ -1,29 +1,29 @@
 body {
     background: #000;
+    font-family: "Gamer";
+    font-size: 1.7rem;
 }
 
 .container {
     margin: 30px auto;
     max-width: 400px;
     flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
-.container .pilih div{
+.container .pilih div {
     display: flex;
 }
 
 .menu {
     padding: 10px;
-    border:3px gold solid;
+    border:3px #4D4DFF solid;
     margin: 20px;
 }
 
 .menu:hover {
-    background: gold;
-}
-
-.keluar {
-    background-color: red;
+    background: #4D4DFF;
 }
 
 .pilih div span {
@@ -33,9 +33,56 @@ body {
 h1 {
     color: white;
     text-align: center;
+    font-size: 1.5rem;
+    font-family: "Pixelmania";
+}
+
+.keluar.menu {
+    border-radius: 20px;
+    display: flex;
+    border: none;
+    width: 100px;
+    background: #4D4DFF;
+    margin-top: 50px;
+}
+
+.keluar span {
+    font-size: 1.4rem;
+    margin: auto;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+
+/* || program luas */
+
+.container.program {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    background: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 3px white solid;
+
+}
+
+.hasil {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    margin: 50px;
+    width: 200px;
+    height: 50px;
+    border: 3px white solid;
+}
+
+.hasil span {
+    margin: auto;   
 }
