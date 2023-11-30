@@ -1,63 +1,30 @@
-@font-face {
-    font-family: 'Pixelmania';
-    src: url('font/pixelmania-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Kemco';
-    src: url('font/kemco_pixel_bold-webfont.woff') format('woff');
-}
-
-
-/* || style umum */
- html, body {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
-.container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-}
-
 /* || style halaaman utama */
-
 .topbar {
     background-color: rgb(230, 192, 0);
-    position: fixed;
     height: 70px;
-    right: 0;
-    left: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
 }
 
 .topbar span {
+    margin: auto;
     color: white;
     font-family: "Pixelmania";
 }
 
 .main {
-    margin: 10px auto;
-    max-width: 500px;
     box-sizing: border-box;
-    padding: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kiri {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
-.main .waktu ,.main .ucapan  {
+.waktu ,.ucapan  {
     width: 200px;
     text-align: center;
     height: 50px;
@@ -74,8 +41,8 @@ body {
 }
 
 .quote span {
-    text-align: center;
     margin: auto;
+    text-align: center;
 }
 
 .main .menu {
@@ -86,13 +53,17 @@ body {
 .main .menu .button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 5px gold solid;
-    margin-top: 10px;
-    font-size: 1.2rem;
-    text-align: center;
+    display: flex;
+    margin: 10px;
+    font-size: 1rem;
     line-height: 50px;
     width: 200px;
     height: 50px;
     cursor: pointer;
+}
+
+.main .menu .button span {
+    margin: auto;
 }
 
 .main .menu .button:hover {
@@ -101,4 +72,25 @@ body {
 .menu .button a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    font-size: .7rem;
+    height: 50px;
+    color: black;
+    background: gold;
+    font-family: "Pixelmania";
+}
+
+.footer span {
+    margin: auto;
+}
+
+
+@media screen and (max-width : 630px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
 }
