@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container program">
-        <input type="number" name="" id="input-sisi" placeholder="panjang sisi lingkaran">
+        <input type="number" name="" id="input-sisi" placeholder="radius">
         <div class="hasil">
             <span></span>
         </div>
@@ -21,17 +21,13 @@
         const hasil = document.querySelector('.hasil span');
         const phi = 3.14;
 
-        function getSisi() {
+        function getRadius() {
             return Number(input.value);
         }
 
         function getLuas() {
-            if (getSisi() == 0) {
-                hasil.innerHTML = `Anda salah memasukkan angka`;    
-            } else {
-                let luas = phi * getSisi() * getSisi();
+                let luas = phi * getRadius() * getRadius();
                 hasil.innerHTML = `${luas} cm2`;    
-            }
         }
 
         input.addEventListener('input', getLuas);
