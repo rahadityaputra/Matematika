@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volume Balok </title>
+    <link rel="stylesheet" href="luas.css">
+</head>
+<body>
+    <div class="container program">
+        <input type="number" name="" id="input-panjang" placeholder="panjang">
+        <input type="number" name="" id="input-lebar" placeholder="lebar">
+        <input type="number" name="" id="input-tinggi" placeholder="tinggi">
+        <div class="hasil">
+            <span></span>
+        </div>
+        <div class="keluar menu">
+            <span><a href="volume.html">KELUAR</a></span>
+        </div>
+    </div>
+    <script>
+        const inputPanjang = document.getElementById('input-panjang');
+        const inputLebar = document.getElementById('input-lebar');
+        const inputTinggi = document.getElementById('input-tinggi');
+        const hasil = document.querySelector('.hasil span');
+
+
+        // function ini berfungsi untuk mengembalikan nilai dari kotak inputan
+        function getPanjang() {
+            return Number(inputPanjang.value);
+        }
+        
+        function getLebar() {
+            return Number(inputLebar.value);
+        }
+
+        function getTinggi() {
+            return Number(inputTinggi.value);
+        }
+
+        function getVolume() {
+            let volume = getPanjang() * getLebar() * getTinggi();
+            hasil.innerHTML = `${volume} cm3`;    
+        }
+
+        // ketika kolom input di masukkan input di klik maka jalankan function getVolume
+        inputPanjang.addEventListener('input', getVolume);
+        inputLebar.addEventListener('input', getVolume);
+        inputTinggi.addEventListener('input', getVolume);
+    </script>
+</body>
+</html>

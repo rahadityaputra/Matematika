@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Bola </title>
+    <link rel="stylesheet" href="luas.css">
+</head>
+<body>
+    <div class="container program">
+        <input type="number" name="" id="input-radius" placeholder="radius">
+        <div class="hasil">
+            <span></span>
+        </div>
+        <div class="keluar menu">
+            <span><a href="volume.html">KELUAR</a></span>
+        </div>
+    </div>
+    <script>
+        const input = document.getElementById('input-radius');
+        const phi = 3.14;
+        const hasil = document.querySelector('.hasil span');
+
+
+        // function ini berfungsi untuk mengembalikan nilai dari kotak inputan
+        function getRadius() {
+            return Number(input.value);
+        }
+
+        function getVolume() {
+            let volume = (4 / 3) * phi * getRadius() * getRadius() * getRadius();
+            hasil.innerHTML = `${volume} cm3`;    
+        }
+
+        // ketika kolom input di masukkan input di klik maka jalankan function getVolume
+        input.addEventListener('input', getVolume);
+    </script>
+</body>
+</html>
